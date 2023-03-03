@@ -25,9 +25,9 @@ body {
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 410px) {
     body {
-        padding: 0;
+        padding: 0px;
     }
 }
 
@@ -239,6 +239,7 @@ label {
     font-size: 14px;
     color: #111111;
     margin-top: 6px;
+    background: transparent;
 }
 
 @media screen and (max-width: 607px) {
