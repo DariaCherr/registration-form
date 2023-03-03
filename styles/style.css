@@ -171,16 +171,16 @@ label {
     position: absolute;
 }
 
-@media screen and (max-width: 500px) {
-    .btn {
-        margin-top: 50px;
-    }
-}
-
 @media screen and (max-width: 660px) {
     .btn {
         width: 124px;
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 409px) {
+    .btn {
+        margin-top: 65px;
     }
 }
 
