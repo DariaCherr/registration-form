@@ -148,20 +148,11 @@ label {
   }
 }
 .gen {
-  margin-bottom: 16px;
-  margin-top: 12px;
+  margin: 6px 0 16px 0;
   display: flex;
   flex-direction: row;
 }
 
-@media screen and (max-width: 541px) {
-  .gen {
-    flex-direction: column;
-    margin-bottom: 6px;
-    margin-top: 10px;
-    font-size: 12px;
-  }
-}
 .pick-gender {
   font-size: 14px;
   font-weight: 400;
@@ -188,14 +179,34 @@ label {
     margin-top: 55px;
   }
 }
-.btn {
-  background-color: #5A61ED;
-  color: #FFFFFF;
-  font-weight: 400;
-  font-size: 14px;
-  width: 154px;
-  height: 32px;
-  border: 0.5px solid #FFFFFF;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Work Sans", "PT Sans", sans-serif;
+  background: #F4F5FC;
+  color: #111111;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+}
+
+h1 {
+  font-size: 22px;
 }
 
 @media screen and (max-width: 600px) {
@@ -235,32 +246,16 @@ label {
     margin-top: 10px;
   }
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.btn {
+  background-color: #5A61ED;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  width: 154px;
+  height: 32px;
+  border: 0.5px solid #FFFFFF;
 }
 
-html,
-body {
-  font-family: "Work Sans", "PT Sans", sans-serif;
-  background: #F4F5FC;
-  color: #111111;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.wrapper {
-  display: flex;
-}
-
-h1 {
-  font-size: 22px;
+.thanks {
+  margin: 178px auto 152px 43px;
 }/*# sourceMappingURL=styles.css.map */

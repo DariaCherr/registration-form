@@ -1,0 +1,195 @@
+// Стили для формы
+.form {
+    background-color: #FFF;
+    padding: 39px 22px 33px 20px;
+    background-image: url(/noun_925550.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+// Стили для элементов формы
+.form__card {
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: 1s;
+}
+
+.form__card_visible {
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.form__cards {
+    display: flex;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.right:nth-child(2n+1) {
+    margin-right: 20px;
+}
+
+.right {
+    width: 100%;
+    max-width: 234.5px;
+}
+
+// Стили для левой части формы
+.left {
+    background-color: #5A61ED;
+    color: #FFF;
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 49px;
+    max-width: 150px;
+    position: relative;
+}
+
+@media screen and (max-width: 660px) {
+    .left {
+        max-width: 90px;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    .left {
+        max-width: 60px;
+    }
+}
+
+.sign {
+    position: relative;
+    transform: rotate(-90deg);
+    width: 170px;
+    display: inline-block;
+    left: 20%;
+    bottom: -70%;
+}
+
+@media screen and (max-width: 660px) {
+    .sign {
+        left: -30%;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    .sign {
+        font-size: 30px;
+        left: -80%;
+    }
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+// Стили для инпутов
+.text-entry {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 1px solid #F2F2F2;
+    font-size: 14px;
+    color: #111111;
+    background: transparent;
+}
+
+.text-entry:focus {
+    outline: none;
+}
+
+label {
+    font-size: 12px;
+    color: #7C7C7C;
+}
+
+.text {
+    color: #000000;
+    font-size: 13px;
+}
+
+.text span {
+    color: #5A61ED;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+// Стили для календаря
+.form__calendar {
+    width: 234.5;
+    width: 100%;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 18px 0;
+}
+
+@media screen and (max-width: 607px) {
+    .date {
+        margin-bottom: 20.5px;
+    }
+}
+
+.data:not(:last-child) {
+    margin-right: 9.8px;
+}
+
+.calendar {
+    font-family: 'Work Sans';
+    border: none;
+    border-bottom: 1px solid #F2F2F2;
+    font-size: 14px;
+    color: #111111;
+    margin-top: 6px;
+    background: transparent;
+}
+
+@media screen and (max-width: 675px) {
+    .calendar {
+        font-size: 13px;
+    }
+}
+
+// Стили для выбора пола
+.gen {
+    margin: 6px 0 16px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.pick-gender {
+    font-size: 14px;
+    font-weight: 400;
+    color: #111111;
+}
+
+@media screen and (max-width: 541px) {
+    .pick-gender {
+        font-size: 12px;
+    }
+}
+
+.gender-male {
+    margin-right: 17px;
+}
+
+// Стили для кнопки и логина
+.btn-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 98.4px;
+}
+
+@media screen and (max-width: 500px) {
+    .btn-text {
+        margin-top: 55px;
+    }
+}

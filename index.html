@@ -17,41 +17,42 @@
             <div class="left">
                 <p class="sign">Sign Up</p>
             </div>
-            <form id="reservation">
-                <h1>New User?</h1>
-                <p class="description">Use the form below to create your account.</p>
-                <div class="form-wrapper">
+            <div class="register">
+                <form class="form" id="reservation">
+                    <h1>New User?</h1>
+                    <p class="description">Use the form below to create your account.</p>
+                    <div class="form-wrapper">
 
-                    <div class="form__cards">
-                        <div class="form__card firstName right">
-                            <label class="block" for="userName">First Name</label>
-                            <input class="text-entry" type="text" name="name" id="userName" required>
+                        <div class="form__cards">
+                            <div class="form__card firstName right">
+                                <label class="block" for="userName">First Name</label>
+                                <input class="text-entry" type="text" name="name" id="userName" required>
+                            </div>
+
+                            <div class="form__card lastName right">
+                                <label class="block" for="lastName">Last Name</label>
+                                <input class="text-entry" type="text" name="name" id="lastName" required>
+                            </div>
                         </div>
 
-                        <div class="form__card lastName right">
-                            <label class="block" for="lastName">Last Name</label>
-                            <input class="text-entry" type="text" name="name" id="lastName" required>
-                        </div>
-                    </div>
+                        <div class="form__cards">
+                            <div class="form__card nationality right">
+                                <label class="block" for="userNationality">Nationality</label>
+                                <input class="text-entry" type="text" name="name" id="userNationality" required>
+                            </div>
 
-                    <div class="form__cards">
-                        <div class="form__card nationality right">
-                            <label class="block" for="userNationality">Nationality</label>
-                            <input class="text-entry" type="text" name="name" id="userNationality" required>
-                        </div>
+                            <div class="form__card userEmail right">
+                                <label class="block" for="userEmail">E-mail</label>
+                                <input class="text-entry" type="email" name="name" id="userEmail" required>
+                            </div>
 
-                        <div class="form__card userEmail right">
-                            <label class="block" for="userEmail">E-mail</label>
-                            <input class="text-entry" type="email" name="name" id="userEmail" required>
                         </div>
 
-                    </div>
-
-                    <div class="form__cards form__calendar">
-                        <div class="form__card date right">
-                            <label class="block" for="date">Date Of Birth</label>
-                            <div class="date-birth">
-                                <span class="data">                    
+                        <div class="form__cards form__calendar">
+                            <div class="form__card date right">
+                                <label class="block" for="date">Date Of Birth</label>
+                                <div class="date-birth">
+                                    <span class="data">                    
                                 <select class="calendar" id="date" name="day">
                                 <option selected>Day</option>
                                 <option value="1">1</option>
@@ -87,7 +88,7 @@
                                 <option value="31">31</option>
                             </select>
                               </span>
-                                <span class="data">                                
+                                    <span class="data">                                
                                 <select class="calendar" id="month" name="month">
                                     <option selected>Month</option>
                                   <option value="1">January</option>
@@ -104,7 +105,7 @@
                                   <option value="12">December</option>
                                 </select>
                               </span>
-                                <span class="data">
+                                    <span class="data">
                                 <select class="calendar" id="year" name="year">
                                     <option selected>Year</option>
                                     <option value="1">2023</option>
@@ -156,53 +157,55 @@
                                     <option value="47">1977</option>
                                   </select>
                               </span>
-                            </div>
-                        </div>
-
-                        <div class="form__card gender right">
-                            <label class="block" for="gender">Gender</label>
-                            <div class="gen" id="gender">
-                                <div class="gender-male">
-                                    <input type="radio" name="gender" id="male" value="male">
-                                    <label class="pick-gender" for="male">Male</label>
-                                </div>
-                                <div class="gender-female">
-                                    <input type="radio" name="gender" id="female" value="female" checked>
-                                    <label class="pick-gender" for="female">Female</label>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="form__cards">
-                        <div class="form__card userPassword right">
-                            <label class="block" for="userPassword">Password</label>
-                            <input class="text-entry" type="password" name="password" id="userPassword" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}" title="Password from a-z A-Z 0-9 and more than 8 characters" ; required>
+                            <div class="form__card gender right">
+                                <label class="block" for="gender">Gender</label>
+                                <div class="gen" id="gender">
+                                    <div class="gender-male">
+                                        <input type="radio" name="gender" id="male" value="male">
+                                        <label class="pick-gender" for="male">Male</label>
+                                    </div>
+                                    <div class="gender-female">
+                                        <input type="radio" name="gender" id="female" value="female">
+                                        <label class="pick-gender" for="female">Female</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form__card confirmPassword right">
-                            <label class="block" for="confirmPassword">Confirm Password</label>
-                            <input class="text-entry" type="password" name="password" id="confirmPassword" required>
-                            <div class="button">
-                                <button class="btn" type="submit">Complete Signup</button>
+                        <div class="form__cards">
+                            <div class="form__card userPassword right">
+                                <label class="block" for="userPassword">Password</label>
+                                <input class="text-entry" type="password" name="password" id="userPassword" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}" title="Password from a-z A-Z 0-9 and more than 8 characters" ; required>
                             </div>
 
+                            <div class="form__card confirmPassword right">
+                                <label class="block" for="confirmPassword">Confirm Password</label>
+                                <input class="text-entry" type="password" name="password" id="confirmPassword" required>
+                            </div>
+                        </div>
+
+                        <div class="form__cards btn-text">
+                            <p class="text">Have an account? <span>Login</span></p>
+                            <button class="btn" type="submit">Complete Signup</button>
                         </div>
                     </div>
-
-                    <p class="text">Have an account? <span>Login</span></p>
-                </div>
+            </div>
         </div>
 
-        <div class="hidden">
+        <div class="thanks hidden">
             <h2>Thank You!</h2>
             <p>you registered!</p>
+            <p class="text">Have an account? <span>Login</span></p>
         </div>
         </form>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="js/visibleForm.js"></script>
+    <script src="js/formSend.js"></script>
 </body>
 
 </html>
